@@ -1,5 +1,6 @@
 /**
  * Mutable variables are not allowed to change their types
+ * so we are not allowed to mutate a variable's type
  */
 
 fn main() {
