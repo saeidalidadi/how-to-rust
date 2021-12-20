@@ -30,4 +30,11 @@ fn main() {
             println!("{} is an 'Odd' number.", i)
         }
     }
+
+    // loop through elements of a collection
+    let names = ["John", "Jack", "Saeid"];
+
+    for name in names {
+        println!("Name is: {}", name);
+    }
 }
