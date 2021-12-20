@@ -9,7 +9,7 @@ fn main() {
 
 
     // Function's statement with expressions
-    println!("Hi {}", with_expression(5));
+    println!("Hi {}", with_expression());
 }
 
 fn say_hello(num: i8) -> i8 {
@@ -23,10 +23,11 @@ fn say_hello(num: i8) -> i8 {
  * Statement: Statements are instructions that perform some action and do not return a value
  * Expression: Expressions evaluate to a resulting value
  */
-fn with_expression(num: i8) -> i8 {
-    let my_name = {
-       let a = 10;
-       a + num
+fn with_expression() -> String {
+    let my_name: String = {
+       let first = "John".to_string();
+       let last = "Doe".to_string();
+       format!("{} {}", first, last)
     };
 
     my_name
