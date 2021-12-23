@@ -37,4 +37,15 @@ fn main() {
     for name in names {
         println!("Name is: {}", name);
     }
+
+    // return result of loop expresion
+    let mut counter_2 = 0;
+    let big = loop {
+        counter_2 +=1;
+        if counter_2==5 {
+            break counter_2;
+        }
+    };
+
+    println!("Counter is {} ", big)
 }
