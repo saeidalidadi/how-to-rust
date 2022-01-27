@@ -17,11 +17,17 @@
         Err(String::from("N should be less than 3"))
     }
  }
-fn main() {
+
+fn main() -> Result<(), String> {
     let result = maight_fail(4);
 
     match result {
         Ok(t) => println!("{}", t),
         Err(e) => println!("Error: {}", e)
     };
+
+    let result = maight_fail(2)?;
+    println!("Result {}", result);
+    Ok(())
+
 }
