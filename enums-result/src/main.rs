@@ -28,6 +28,14 @@ fn main() -> Result<(), String> {
 
     let result = maight_fail(2)?;
     println!("Result {}", result);
+
+    let result = maight_fail(5).unwrap();
+    println!("Result Ugly handling error: {}", result);
+    
+    
+    let result = maight_fail(4)?;
+    println!("Result with error: {}", result);
+    
     Ok(())
 
 }
